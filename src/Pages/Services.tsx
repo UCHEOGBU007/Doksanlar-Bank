@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import {
   Zap,
   Globe,
@@ -86,13 +88,16 @@ const CardProduct = ({
         ))}
       </ul>
 
-      <button className="w-full py-4 bg-slate-950 text-white text-[11px] font-black uppercase tracking-[0.2em] rounded-2xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-slate-900/10 hover:shadow-blue-700/20">
+      <Link
+        to="/contact"
+        className="w-full py-4 bg-slate-950 text-white text-[11px] font-black uppercase tracking-[0.2em] rounded-2xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group shadow-xl shadow-slate-900/10 hover:shadow-blue-700/20"
+      >
         Request Invitation
         <ChevronRight
           size={16}
           className="group-hover:translate-x-1 transition-transform"
         />
-      </button>
+      </Link>
     </div>
   </motion.div>
 );
@@ -184,12 +189,18 @@ export default function Services() {
             </p>
 
             <div className="flex flex-wrap gap-5">
-              <button className="px-10 py-5 bg-blue-700 text-white font-black rounded-2xl hover:bg-white hover:text-blue-950 transition-all shadow-2xl shadow-blue-900/30">
+              <Link
+                to="/corporate"
+                className="px-10 py-5 bg-blue-700 text-white font-black rounded-2xl hover:bg-white hover:text-blue-950 transition-all shadow-2xl shadow-blue-900/30"
+              >
                 Explore The Suite
-              </button>
-              <button className="px-10 py-5 border border-white/20 text-white font-bold rounded-2xl hover:bg-white/5 transition-all flex items-center gap-2">
+              </Link>
+              <Link
+                to="/contact"
+                className="px-10 py-5 border border-white/20 text-white font-bold rounded-2xl hover:bg-white/5 transition-all flex items-center gap-2"
+              >
                 Talk to Private Banker <ChevronRight size={18} />
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -352,9 +363,12 @@ export default function Services() {
                 Join the global elite who rely on Doksanlar Bank for
                 cross-border capital management and asset protection.
               </p>
-              <button className="px-14 py-6 bg-blue-700 text-white font-black rounded-2xl hover:bg-white hover:text-blue-950 transition-all shadow-xl active:scale-95 uppercase tracking-widest text-xs">
+              <Link
+                to="/contact"
+                className="px-14 py-6 bg-blue-700 text-white font-black rounded-2xl hover:bg-white hover:text-blue-950 transition-all shadow-xl active:scale-95 uppercase tracking-widest text-xs"
+              >
                 Request Private Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>

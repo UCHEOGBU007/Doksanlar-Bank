@@ -49,9 +49,12 @@ const CorporatePage = () => {
               advisory for the world's most ambitious corporations.
             </p>
             <div className="flex gap-6">
-              <button className="px-10 py-5 bg-blue-700 text-white font-black rounded-xl hover:bg-white hover:text-slate-950 transition-all shadow-2xl">
+              <Link
+                to="/Signup"
+                className="px-10 py-5 bg-blue-700 text-white font-black rounded-xl hover:bg-white hover:text-slate-950 transition-all shadow-2xl"
+              >
                 Open Corporate Account
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
